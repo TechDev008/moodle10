@@ -672,8 +672,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '<b>💻Bot: Moodle Wachu Venta 1 V7.1</b>\n'
-            start_msg+= '<b>📭Desarrollador: @Wachu985</b>\n'
+            start_msg = '<b>💻Bot: MoodleDev - 10</b>\n'
+            start_msg+= '<b>📭Desarrollador: @alejandr0123</b>\n'
             start_msg+= '<b>📌Guia: </b> <a href="https://nube.reduc.edu.cu/index.php/s/L9WMzC56ZgTZo6b/download/Tutorial%20R%C3%A1pido%20.mp4">AQUI</a>\n'
             start_msg+= '<b>🚨Uso: Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)</b>\n'
             bot.editMessageText(message,start_msg,parse_mode='html')
@@ -788,9 +788,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 7386053
-            #    api_hash = '78d1c032f3aa546ff5176d9ff0e7f341'
-            #    bot_token = '5124841893:AAH30p6ljtIzi2oPlaZwBmCfWQ1KelC6KUg'
+            #    api_id = 9024532
+            #    api_hash = '131b576240be107210aace99a5f5c5b0'
+            #    bot_token = '5584565058:AAHIJFi4VewKF3kLD8kq_17z5NJ_FkzOVd8'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -806,7 +806,7 @@ def main():
     bot_token = os.environ.get('bot_token')
     print('init bot.')
     #set in debug
-    bot_token = '5350913309:AAGAiuzdRZUmjxwjeVKi7PHQScdDcmz23ws'
+    bot_token = '5584565058:AAHIJFi4VewKF3kLD8kq_17z5NJ_FkzOVd8'
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
     bot.run()
