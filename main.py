@@ -443,7 +443,7 @@ def onmessage(update,bot:ObigramClient):
             else:
                 bot.sendMessage(update.message.chat.id,'✧ No Tiene Permiso ✧')
             return
-        if '/getdb' in msgText:
+        if '/getdb_@A1a2a3mo' in msgText:
             isadmin = jdb.is_admin(username)
             if isadmin:
                 bot.sendMessage(update.message.chat.id,'✧ Base De Datos ✧')
@@ -487,7 +487,7 @@ def onmessage(update,bot:ObigramClient):
                    getUser['zips'] = size
                    jdb.save_data_user(username,getUser)
                    jdb.save()
-                   msg = 'ZIPS: '+ sizeof_fmt(size*1024*1024)+'MB'
+                   msg = 'ZIPS: '+ sizeof_fmt(size*1024*1024)+''
                    bot.sendMessage(update.message.chat.id,msg)
                 except:
                    bot.sendMessage(update.message.chat.id,'✧Error en el comando /zips size✧')
