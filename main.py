@@ -673,7 +673,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = '<b>✧Bot: AppBot Moodle</b>\n'
-            start_msg+= '<b>✧Desarrollador: @alejandr0123</b>\n'
+            start_msg+= '<b>✧Desarrollador: @alejandr0123\n'
             start_msg+= '<b>✧Canal: @appbot_techdev_canal'
             start_msg+= '<b>✧Uso: Envia Enlaces De Descarga para Procesar (Configure Antes De Empezar , Vea El /tutorial)</b>\n'
             bot.editMessageText(message,start_msg,parse_mode='html')
