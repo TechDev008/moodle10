@@ -667,7 +667,7 @@ def onmessage(update,bot:ObigramClient):
             return
         #end
 
-        message = bot.sendMessage(update.message.chat.id,'🕰Procesando🕰...')
+        message = bot.sendMessage(update.message.chat.id,'✧ procesando ✧...')
 
         thread.store('msg',message)
 
