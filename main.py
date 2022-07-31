@@ -239,9 +239,15 @@ def onmessage(update,bot:ObigramClient):
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:
-            mensaje = "✧ No tienes Acceso ✧.\nCREADOR: @alejandr0123\n"
-            intento_msg = "✧ El usuario @"+username+ " ha intentando usar el bot sin permiso ✧"
-            bot.sendMessage(update.message.chat.id,mensaje)
+            try:
+                    jdb.create_user(username)
+                    jdb.save()
+                    msg = f'✧ Sesión iniciada como {username}\nUse /start'
+                    bot.sendMessage(update.message.chat.id,msg)
+                except:
+                    bot.sendMessage(update.message.chat.id,'✧ No se pudo iniciar sesión: \n Se puede deber a un error en su username ✧')
+
+            intento_msg = "✧ El usuario @"+username+ " ha empezado a usar el bot ✧"
             bot.sendMessage(1593891519,intento_msg)
             return
 
