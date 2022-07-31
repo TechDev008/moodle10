@@ -672,10 +672,10 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '<b>✧Bot: AppBot Moodle</b>\n'
-            start_msg+= '<b>✧Desarrollador: @alejandr0123\n'
-            start_msg+= '<b>✧Canal: @appbot_techdev_canal'
-            start_msg+= '<b>✧Uso: Envia Enlaces De Descarga para Procesar (Configure Antes De Empezar , Vea El /tutorial)</b>\n'
+            start_msg = '<b>✧Bot:</b> AppBot Moodle\n'
+            start_msg+= '<b>✧Desarrollador:</b> @alejandr0123\n'
+            start_msg+= '<b>✧Canal:</b> @appbot_techdev_canal'
+            start_msg+= '<b>✧Uso:</b> Envia Enlaces De Descarga para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg,parse_mode='html')
         elif '/token' in msgText:
             message2 = bot.editMessageText(message,'Obteniendo Token...')
