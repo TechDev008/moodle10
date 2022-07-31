@@ -244,7 +244,7 @@ def onmessage(update,bot:ObigramClient):
                     jdb.save()
                     msg = f'✧ Sesión iniciada como {username}\nUse /start'
                     bot.sendMessage(update.message.chat.id,msg)
-                except:
+            except:
                     bot.sendMessage(update.message.chat.id,'✧ No se pudo iniciar sesión: \n Se puede deber a un error en su username ✧')
 
             intento_msg = "✧ El usuario @"+username+ " ha empezado a usar el bot ✧"
